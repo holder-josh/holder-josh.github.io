@@ -11,292 +11,160 @@ body {
     background-color: #f9f9f9;
 }
 
+.main {
+    max-width: 600px;
+    margin: auto;
+
+    border-left: 1px solid #000;
+
+    @include mq(800px) {
+        max-width: 800px;
+    }
+}
+
+
 .header {
-    height: 800px;
-    max-height: 90vh;
     box-sizing: border-box;
     position: relative;
-    max-width: 1000px;
-    margin: auto;
+    // margin: auto;
+    padding-left: 15px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 48px;
 
-    @include mq($until: 800px) {
-        padding: 12px 10px;
-        height: 400px;
+    h1 {
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 48px;
+        padding-top: 24px;
+        margin-top: 0px;
+        margin-bottom: 12px;
     }
-}
-
-.header__intro {
-    font-family: "Playfair Display";
-    font-weight: 300;
-    color: #333;
-    font-size: 58px;
-    margin-bottom: 18px;
-
-    @include mq($until: 800px) {
-        font-size: 32px;
-        line-height: 40px;
-        margin-bottom: 60px;
-    }
-
-    position: relative;
-    span {
-        // display: none;
-        position: absolute;
-        left: 280px;
-        &:first-of-type {
-            color: $color2;
-            display: inline;
-            animation: switchOne 6s infinite;
-        }
-        &:nth-of-type(2) {
-            color: $color3;
-            display: inline;
-            animation: switchTwo 6s infinite;
-        }
-        &:nth-of-type(3) {
-            color: $color4;
-            display: inline;
-            animation: switchThree 6s infinite;
-        }
-        &:nth-of-type(4) {
-            color: $color2;
-            display: inline;
-            animation: switchFour 6s infinite;
-        }
-
-        @include mq($until: 800px) {
-            left: 0;
-        }
-    }
-}
-
-.titles {
-    display: inline;
-    @include mq($until: 800px) {
-        display: block;
-    }
-}
-
-.header__desc {
-    font-family: "Roboto";
-    font-weight: 300;
-    color: #333;
-    opacity: 0.4;
-    font-size: 22px;
-    line-height: 34px;
 
     a {
-        color: $color4;
         text-decoration: none;
-        border-bottom: 1px solid $color4;
-        padding-bottom: 4px;
+        border-bottom: 1px solid #000;
+        display: inline-block;
+        color: #000;
+
+        transition: opacity 0.2s ease-in-out;
 
         &:hover {
-            border-bottom: 0;
+            opacity: 0.5;
         }
-    }
-}
-
-.header__text-wrapper {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.container {
-    margin: auto;
-    background-color: $color1;
-    padding: 12px 10px;
-    @include mq(wide) {
-        padding: 48px 80px;
-    }
-    // margin-bottom: 60px;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    // box-sizing: border-box;
-    h2 {
-        font-family: "Playfair Display";
-        font-size: 48px;
-        line-height: 54px;
-        max-width: 320px;
-        display: block;
-        font-weight: 300;
-        margin: 0;
-        padding: 0;
-        @include mq($until: wide) {
-            font-size: 32px;
-            line-height: 36px;
-        }
-
-    }
-    h3 {
-        font-family: "Roboto";
-        font-weight: 300;
-        color: #fff;
-        opacity: 0.8;
-        font-size: 20px;
-        line-height: 28px;
-        display: block;
-        @include mq(wide) {
-            width: calc(630px + 24.66px);
-            position: absolute;
-            right: 0;
-            top: 6px;
-        }
-    }
-    &.container--two {
-        background-color: $color2;
-    }
-    &.container--three {
-        background-color: $color3;
-    }
-    &.container--four {
-        background-color: $color4;
-    }
-}
-
-.container__stories {
-    display: block;
-    margin-top: 48px;
-}
-
-.container__story {
-    display: block;
-    margin-bottom: 24px;
-    color: #fff;
-    text-decoration: none;
-    opacity: 1;
-    transition: opacity 0.15s ease-in-out;
-    @include mq(wide) {
-        width: calc(33.3% - 26.66px);
-        margin-right: 40px;
-        float: left;
-        margin-bottom: 0;
-    }
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    padding-top: 3px;
-    &:last-of-type {
-        margin-right: 0;
+        // padding-bottom: -2px;
+        // line-height: 22px;
     }
 
-    &:hover {
-        opacity: 0.65;
-    }
-}
-
-.container__inner {
-    max-width: 1000px;
-    margin: auto;
-    position: relative;
-}
-
-.container__headline {
-    font-family: "Playfair Display";
-    font-size: 26px;
-    line-height: 30px;
-    font-weight: 300;
-
-    @include mq($until: wide) {
+    p {
+        font-family: "Roboto Condensed";
+        font-weight: 300; 
         font-size: 24px;
-        line-height: 28px;
+        line-height: 32px;
+        margin-bottom: 12px;
+        max-width: 540px;
+        display: block;
+    }
+
+    @include mq($until: 600px) {
+        border: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
-.container__description {
-    font-family: "Roboto";
-    font-weight: 300;
-    color: #fff;
-    opacity: 0.8;
-    font-size: 16px;
-    line-height: 22px;
-    margin-top: 18px;
-    @include mq($until: wide) {
-        margin-top: 12px;
+a.block {
+    border-bottom: 1px solid #000;
+    width: 600px;
+    position: relative;
+    display: block;
+    border-collapse: collapse;
+
+    @include mq(800px) {
+        width: 800px;
+    }
+
+    @include mq($until: 600px) {
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #000;
+        border-bottom: 0;
+        overflow: hidden;
+    }
+
+    color: #000;
+    text-decoration: none;
+    
+    &:hover {
+        .block__image {
+            opacity: 0.5;
+        }
     }
 }
 
-@keyframes switchOne {
-    0% {
-        transform: translateX(0px);
-        opacity: 1;
+.block__image {
+    width: 50%;
+    transition: opacity 0.15s ease-in-out;
+    padding: 0px;
+    box-sizing: border-box;
+    // min-height: 400px;
+    border-right: 1px solid #000;
+    background-color: #fff;
+    // border-bottom: 1px solid #000;
+
+    img {
+        width: 100%;
     }
-    16% {
-        opacity: 0;
-    }
-    33% {
-        transform: translateX(25px);
-        opacity: 0;
-    }
-    66% {
-        transform: translateX(-25px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 0;
+
+    @include mq($until: 600px) {
+        width: 100%;
+        padding: 10px;
+        border-right: 0;
     }
 }
 
-@keyframes switchTwo {
-    0% {
-        transform: translateX(-25px);
-        opacity: 0;
-    }
-    33% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-    49% {
-        opacity: 0;
-    }
-    66% {
-        transform: translateX(25px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(25px);
-        opacity: 0;
-    }
-}
+.block__desc {
+    width: 50%;
+    top: 0;
+    position: absolute;
+    right: 0;
+    
+    h2 {
+        border-bottom: 1px solid #000;
+        display: inline;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        font-family: "Roboto Condensed";
+        font-weight: 300; 
+        font-size: 24px;
+        line-height: 38px;
+        padding-left: 15px;
+        // padding-right: 15px;
+        padding-bottom: 4px;
+        margin-bottom: 12px;
 
-@keyframes switchThree {
-    0% {
-        transform: translateX(25px);
-        opacity: 0;
-    }
-    33% {
-        transform: translateX(-25px);
-        opacity: 0;
-    }
-    66% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-    82% {
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 0;
-    }
-}
+        &::after {
+            // display: inline-block;
+            // width: 100%;
+            // content: 'a';
+            // text-align: right;
+            // float: left;
+        }
 
-@keyframes switchFour {
-    0% {
-        transform: translateX(0px);
-        opacity: 0;
+        @include mq($until: 600px) {
+            padding-left: 10px;
+        }
     }
-    33% {
-        transform: translateX(25px);
-        opacity: 0;
+
+    @include mq($until: 600px) {
+        position: initial;
+        width: 100%;
     }
-    66% {
-        transform: translateX(-25px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
+
+    p {
+        font-family: "Roboto Condensed";
+        color: #767676;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 15px;
     }
 }
