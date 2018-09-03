@@ -1,20 +1,23 @@
 html,
 body {
   margin: 0;
-  background-color: #f9f9f9; }
+  background-color: #fdda5b; }
 
 .main {
   max-width: 600px;
   margin: auto;
-  border-left: 1px solid #000; }
+  margin-bottom: 48px; }
   @media (min-width: 50em) {
     .main {
       max-width: 800px; } }
+  @media (min-width: 75em) {
+    .main {
+      max-width: 1200px; } }
 
 .header {
   box-sizing: border-box;
   position: relative;
-  padding-left: 15px;
+  padding-left: 0;
   border-bottom: 1px solid #000;
   padding-bottom: 48px; }
   .header h1 {
@@ -57,6 +60,9 @@ a.block {
   @media (min-width: 50em) {
     a.block {
       width: 800px; } }
+  @media (min-width: 75em) {
+    a.block {
+      width: 1200px; } }
   @media (max-width: 37.5em) {
     a.block {
       width: 100%;
@@ -68,7 +74,7 @@ a.block {
     opacity: 0.5; }
 
 .block__image {
-  width: 50%;
+  width: 25%;
   transition: opacity 0.15s ease-in-out;
   padding: 0px;
   box-sizing: border-box;
@@ -86,7 +92,7 @@ a.block {
   width: 50%;
   top: 0;
   position: absolute;
-  right: 0;
+  left: 25%;
   padding-bottom: 24px; }
   .block__desc h2 {
     border-bottom: 1px solid #000;
@@ -103,6 +109,9 @@ a.block {
     @media (max-width: 37.5em) {
       .block__desc h2 {
         padding-left: 10px; } }
+  @media (max-width: 50em) {
+    .block__desc {
+      width: 75%; } }
   @media (max-width: 37.5em) {
     .block__desc {
       position: initial;

@@ -8,18 +8,22 @@ $color4: #EA4525;
 html,
 body {
     margin: 0;
-    background-color: #f9f9f9;
+    background-color: #fdda5b;
 }
 
 .main {
     max-width: 600px;
     margin: auto;
 
-    border-left: 1px solid #000;
-
     @include mq(800px) {
         max-width: 800px;
     }
+
+    @include mq(1200px) {
+        max-width: 1200px;
+    }
+
+    margin-bottom: 48px;
 }
 
 
@@ -27,7 +31,7 @@ body {
     box-sizing: border-box;
     position: relative;
     // margin: auto;
-    padding-left: 15px;
+    padding-left: 0;
     border-bottom: 1px solid #000;
     padding-bottom: 48px;
 
@@ -83,6 +87,10 @@ a.block {
         width: 800px;
     }
 
+    @include mq(1200px) {
+        width: 1200px;
+    }
+
     @include mq($until: 600px) {
         width: 100%;
         background-color: #fff;
@@ -102,7 +110,7 @@ a.block {
 }
 
 .block__image {
-    width: 50%;
+    width: 25%;
     transition: opacity 0.15s ease-in-out;
     padding: 0px;
     box-sizing: border-box;
@@ -126,7 +134,7 @@ a.block {
     width: 50%;
     top: 0;
     position: absolute;
-    right: 0;
+    left: 25%;
 
     padding-bottom: 24px;
     
@@ -155,6 +163,11 @@ a.block {
         @include mq($until: 600px) {
             padding-left: 10px;
         }
+    }  
+    
+    @include mq($until: 800px) {
+        // position: initial;
+        width: 75%;
     }
 
     @include mq($until: 600px) {
