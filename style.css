@@ -25,7 +25,12 @@ body {
     font-size: 48px;
     padding-top: 24px;
     margin-top: 0px;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 50em) {
+      .header h1 {
+        margin-left: -5px; } }
   .header a {
     text-decoration: none;
     border-bottom: 1px solid #000;
@@ -41,7 +46,16 @@ body {
     line-height: 32px;
     margin-bottom: 12px;
     max-width: 540px;
-    display: block; }
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 24px; }
+    @media (min-width: 50em) {
+      .header p {
+        transform: translateX(-5px); } }
+  @media (min-width: 50em) {
+    .header {
+      margin-bottom: 0px; } }
   @media (max-width: 37.5em) {
     .header {
       border: 0;
