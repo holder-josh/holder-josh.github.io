@@ -12,6 +12,8 @@ body, html {
       width: 100%;
       max-width: 500px;
       margin-top: 24px; } }
+  .main h1 {
+    margin: 0; }
 
 .main__left {
   width: 500px;
