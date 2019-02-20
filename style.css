@@ -1,131 +1,138 @@
-html,
-body {
+body, html {
   margin: 0;
-  background-color: #fdda5b; }
+  padding: 0;
+  background-color: #fbfbfb; }
 
 .main {
-  max-width: 400px;
+  width: 1100px;
   margin: auto;
-  margin-bottom: 48px; }
-  @media (min-width: 50em) {
+  position: relative; }
+  @media (max-width: 68.74em) {
     .main {
-      max-width: 800px; } }
-  @media (min-width: 75em) {
-    .main {
-      max-width: 1200px; } }
-
-.header {
-  box-sizing: border-box;
-  position: relative;
-  padding-left: 0;
-  padding-bottom: 48px; }
-  .header h1 {
-    font-family: "Playfair Display";
-    font-weight: 700;
-    font-size: 48px;
-    padding-top: 24px;
-    margin-top: 0px;
-    margin-bottom: 12px;
-    width: 100%;
-    text-align: center; }
-    @media (min-width: 50em) {
-      .header h1 {
-        margin-left: -5px; } }
-  .header a {
-    text-decoration: none;
-    border-bottom: 1px solid #000;
-    display: inline-block;
-    color: #000;
-    transition: opacity 0.2s ease-in-out; }
-    .header a:hover {
-      opacity: 0.5; }
-  .header p {
-    font-family: "Roboto Condensed";
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 12px;
-    max-width: 540px;
-    margin: auto;
-    text-align: center;
-    display: block;
-    margin-bottom: 24px; }
-    @media (min-width: 50em) {
-      .header p {
-        transform: translateX(-5px); } }
-  @media (min-width: 50em) {
-    .header {
-      margin-bottom: 0px; } }
-  @media (max-width: 37.5em) {
-    .header {
-      border: 0;
-      padding-left: 10px;
-      padding-right: 10px; } }
-
-a.block {
-  width: 100%;
-  position: relative;
-  display: block;
-  float: left;
-  box-sizing: border-box;
-  border-collapse: collapse;
-  color: #000;
-  text-decoration: none; }
-  @media (min-width: 50em) {
-    a.block {
-      padding-right: 10px;
-      width: 400px; } }
-  @media (max-width: 37.5em) {
-    a.block {
       width: 100%;
-      border-bottom: 0;
-      overflow: hidden; } }
-  a.block:hover .block__image {
-    opacity: 0.5; }
+      max-width: 500px;
+      margin-top: 24px; } }
 
-.block__image {
-  width: 100%;
-  transition: opacity 0.15s ease-in-out;
-  padding: 0px;
-  box-sizing: border-box;
-  background-color: #fff;
-  border: 1px solid #000; }
-  @media (max-width: 37.5em) {
-    .block__image {
-      padding: 10px;
-      border-right: 0; } }
-  .block__image img {
-    width: 100%; }
+.main__left {
+  width: 500px;
+  position: fixed;
+  top: 30px; }
+  @media (max-width: 68.74em) {
+    .main__left {
+      width: 100%;
+      position: relative;
+      top: 0; } }
 
-.block__desc {
-  width: 100%;
-  padding-bottom: 24px;
-  min-height: 120px; }
-  .block__desc h2 {
-    border-bottom: 1px solid #000;
+.main__block {
+  padding: 15px;
+  border-bottom: 1px solid #1b3a97; }
+  .main__block:last-of-type {
+    border-bottom: 0; }
+  .main__block h2 {
+    margin: 0;
+    padding: 0;
     display: inline;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-    font-family: "Roboto Condensed";
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 38px;
-    padding-bottom: 4px;
-    margin-bottom: 12px; }
-    @media (max-width: 37.5em) {
-      .block__desc h2 {
-        padding-left: 10px; } }
-  @media (max-width: 37.5em) {
-    .block__desc {
-      position: initial;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: "Playfair Display";
+    color: #1b3a97; }
+  .main__block img {
+    width: 470px;
+    height: 270px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee; }
+    @media (max-width: 68.74em) {
+      .main__block img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0; } }
+
+.main__left-text {
+  font-family: "Playfair Display";
+  font-size: 48px;
+  line-height: 60px;
+  color: #1b3a97;
+  font-weight: 700;
+  position: absolute;
+  top: 0; }
+  .main__left-text span {
+    color: #1b3a97;
+    -webkit-text-fill-color: #fbfbfb;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #1b3a97;
+    font-weight: 900;
+    font-style: italic; }
+  @media (max-width: 68.74em) {
+    .main__left-text {
       width: 100%;
-      min-height: auto;
-      padding-bottom: 48px; } }
-  .block__desc p {
-    font-family: "Roboto Condensed";
-    color: #767676;
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 15px; }
+      position: relative;
+      top: 0;
+      font-size: 30px;
+      line-height: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: calc(100% - 30px); } }
+
+.main__left-shadow {
+  color: #fbfbfb;
+  font-family: "Playfair Display";
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  transform: translate(2px, 2px); }
+  .main__left-shadow span {
+    color: #1b3a97;
+    -webkit-text-fill-color: #fbfbfb;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #1b3a97;
+    font-weight: 900;
+    font-style: italic;
+    opacity: 0.25; }
+  @media (max-width: 68.74em) {
+    .main__left-shadow {
+      font-size: 30px;
+      line-height: 40px;
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.main__right {
+  width: 500px;
+  margin-left: 600px;
+  border: 1px solid #1b3a97;
+  margin-top: 80px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 80px; }
+  @media (max-width: 68.74em) {
+    .main__right {
+      width: 100%;
+      margin-left: 0; } }
+  @media (max-width: 31.25em) {
+    .main__right {
+      border-left: 0;
+      border-right: 0; } }
+  .main__right a {
+    text-decoration: none; }
+    .main__right a:hover h2 {
+      border-bottom: 1px solid #1b3a97; }
+  .main__right::before {
+    content: 'Selected projects';
+    display: inline-block;
+    background-color: #1b3a97;
+    color: #fff;
+    padding: 10px 15px 15px;
+    font-size: 20px;
+    position: absolute;
+    left: -1px;
+    top: -45px;
+    line-height: 20px;
+    font-family: "Playfair Display";
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
