@@ -10,6 +10,11 @@ body, html {
   padding: 0 10px;
   position: relative;
 }
+@media (min-width: 60em) {
+  .main {
+    max-width: 960px;
+  }
+}
 .main h1 {
   margin: 0;
 }
@@ -40,14 +45,28 @@ body, html {
 }
 
 .main__block {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border: 1px solid #dbdbdb;
+  box-sizing: border-box;
   background-color: #fff;
   transition: transform 0.2s ease-in-out;
+}
+@media (min-width: 60em) {
+  .main__block {
+    margin-right: 20px;
+    max-width: 460px;
+    float: left;
+  }
 }
 .main__block h2 {
   padding-left: 10px;
   padding-right: 10px;
+}
+@media (min-width: 60em) {
+  .main__block h2 {
+    height: 48px;
+    overflow: hidden;
+  }
 }
 .main__block:hover {
   transform: scale(1.02);
