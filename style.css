@@ -10,7 +10,7 @@ body, html {
   padding: 0 10px;
   position: relative;
 }
-@media (min-width: 60em) {
+@media (min-width: 61.25em) {
   .main {
     max-width: 960px;
   }
@@ -51,7 +51,7 @@ body, html {
   background-color: #fff;
   transition: transform 0.2s ease-in-out;
 }
-@media (min-width: 60em) {
+@media (min-width: 61.25em) {
   .main__block {
     margin-right: 20px;
     max-width: 460px;
@@ -62,7 +62,7 @@ body, html {
   padding-left: 10px;
   padding-right: 10px;
 }
-@media (min-width: 60em) {
+@media (min-width: 61.25em) {
   .main__block h2 {
     height: 48px;
     overflow: hidden;
