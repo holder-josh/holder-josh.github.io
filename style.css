@@ -1,140 +1,97 @@
 body, html {
   margin: 0;
   padding: 0;
-  background-color: #fbfbfb; }
+  background-color: #f4f4f4;
+}
 
 .main {
-  width: 1100px;
+  max-width: 500px;
   margin: auto;
-  position: relative; }
-  @media (max-width: 68.74em) {
-    .main {
-      width: 100%;
-      max-width: 500px;
-      margin-top: 24px; } }
-  .main h1 {
-    margin: 0; }
+  padding: 0 10px;
+  position: relative;
+}
+.main h1 {
+  margin: 0;
+}
+.main span {
+  color: #1b3a97;
+}
+.main a {
+  color: #1b3a97;
+  text-decoration: none;
+}
+.main a:hover {
+  border-bottom: 1px solid #1b3a97;
+}
 
-.main__left {
-  width: 500px;
-  position: fixed;
-  top: 30px; }
-  @media (max-width: 68.74em) {
-    .main__left {
-      width: 100%;
-      position: relative;
-      top: 0; } }
+.main__left h1 {
+  font-size: 32px;
+  line-height: 1.25;
+  font-family: "Playfair Display", Arial;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.main__left p {
+  font-family: "Open Sans", "Arial";
+  color: #333;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
 
 .main__block {
-  padding: 15px;
-  border-bottom: 1px solid #1b3a97; }
-  .main__block:last-of-type {
-    border-bottom: 0; }
-  .main__block h2 {
-    margin: 0;
-    padding: 0;
-    display: inline;
-    font-size: 30px;
-    line-height: 40px;
-    font-family: "Playfair Display";
-    color: #1b3a97; }
-  .main__block img {
-    width: 470px;
-    height: 270px;
-    margin-top: 20px;
-    box-sizing: border-box;
-    border: 1px solid #eeeeee; }
-    @media (max-width: 68.74em) {
-      .main__block img {
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 0; } }
-
-.main__left-text {
-  font-family: "Playfair Display";
-  font-size: 48px;
-  line-height: 60px;
-  color: #1b3a97;
-  font-weight: 700;
-  position: absolute;
-  top: 0; }
-  .main__left-text span {
-    color: #1b3a97;
-    -webkit-text-fill-color: #fbfbfb;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color: #1b3a97;
-    font-weight: 900;
-    font-style: italic; }
-  @media (max-width: 68.74em) {
-    .main__left-text {
-      width: 100%;
-      position: relative;
-      top: 0;
-      font-size: 30px;
-      line-height: 40px;
-      padding-left: 15px;
-      padding-right: 15px;
-      width: calc(100% - 30px); } }
-
-.main__left-shadow {
-  color: #fbfbfb;
-  font-family: "Playfair Display";
-  font-size: 48px;
-  line-height: 60px;
-  font-weight: bold;
-  position: absolute;
-  top: 0;
-  transform: translate(2px, 2px); }
-  .main__left-shadow span {
-    color: #1b3a97;
-    -webkit-text-fill-color: #fbfbfb;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #1b3a97;
-    font-weight: 900;
-    font-style: italic;
-    opacity: 0.25; }
-  @media (max-width: 68.74em) {
-    .main__left-shadow {
-      font-size: 30px;
-      line-height: 40px;
-      padding-left: 15px;
-      padding-right: 15px; } }
+  margin-bottom: 40px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+.main__block h2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main__block:hover {
+  transform: scale(1.02);
+}
+.main__block:hover a {
+  border: 0;
+}
 
 .main__right {
-  width: 500px;
-  margin-left: 600px;
-  border: 1px solid #1b3a97;
-  margin-top: 80px;
-  box-sizing: border-box;
-  position: relative;
-  margin-bottom: 80px; }
-  @media (max-width: 68.74em) {
-    .main__right {
-      width: 100%;
-      margin-left: 0; } }
-  @media (max-width: 31.25em) {
-    .main__right {
-      border-left: 0;
-      border-right: 0; } }
-  .main__right a {
-    text-decoration: none; }
-    .main__right a:hover h2 {
-      border-bottom: 1px solid #1b3a97; }
-  .main__right::before {
-    content: 'Selected projects';
-    display: inline-block;
-    background-color: #1b3a97;
-    color: #fff;
-    padding: 10px 15px 15px;
-    font-size: 20px;
-    position: absolute;
-    left: -1px;
-    top: -45px;
-    line-height: 20px;
-    font-family: "Playfair Display";
-    font-weight: 700; }
+  margin-top: 40px;
+}
+.main__right::before {
+  content: "Selected work";
+  font-size: 24px;
+  line-height: 1.25;
+  font-family: "Playfair Display", "Arial";
+  color: #1b3a97;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 20px;
+}
+.main__right img {
+  width: 100%;
+}
+.main__right h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial";
+  color: #333;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main__right h2::before {
+  font-weight: bold;
+  color: #1b3a97;
+  margin-right: 5px;
+  display: inline-block;
+  transition: margin-right 0.1s ease-out;
+}
+.main__right a {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
 
 /*# sourceMappingURL=style.css.map */
