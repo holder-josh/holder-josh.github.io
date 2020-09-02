@@ -1,7 +1,8 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .main {
@@ -19,25 +20,26 @@ body, html {
   margin: 0;
 }
 .main span {
-  color: #1b3a97;
+  color: #FD0000;
 }
 .main a {
-  color: #1b3a97;
+  color: #FD0000;
   text-decoration: none;
 }
 .main a:hover {
-  border-bottom: 1px solid #1b3a97;
+  border-bottom: 1px solid #FD0000;
 }
 
 .main__left h1 {
   font-size: 32px;
   line-height: 1.25;
-  font-family: "Playfair Display", Arial;
+  font-family: "Roboto", Arial;
   margin-bottom: 20px;
+  font-weight: 800;
   margin-top: 20px;
 }
 .main__left p {
-  font-family: "Open Sans", "Arial";
+  font-family: "Roboto", "Arial";
   color: #333;
   font-size: 18px;
   line-height: 27px;
@@ -46,7 +48,7 @@ body, html {
 
 .main__block {
   margin-bottom: 20px;
-  border: 1px solid #dbdbdb;
+  border: 2px solid #000;
   box-sizing: border-box;
   background-color: #fff;
   transition: transform 0.2s ease-in-out;
@@ -65,7 +67,6 @@ body, html {
 @media (min-width: 61.25em) {
   .main__block h2 {
     height: 48px;
-    overflow: hidden;
   }
 }
 .main__block:hover {
@@ -82,8 +83,8 @@ body, html {
   content: "Selected work";
   font-size: 24px;
   line-height: 1.25;
-  font-family: "Playfair Display", "Arial";
-  color: #1b3a97;
+  font-family: "Roboto", "Arial";
+  color: #FD0000;
   font-weight: bold;
   display: block;
   padding-bottom: 20px;
@@ -92,17 +93,17 @@ body, html {
   width: 100%;
 }
 .main__right h2 {
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial";
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "Roboto", "Arial";
   color: #333;
   font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 .main__right h2::before {
   font-weight: bold;
-  color: #1b3a97;
+  color: #FD0000;
   margin-right: 5px;
   display: inline-block;
   transition: margin-right 0.1s ease-out;

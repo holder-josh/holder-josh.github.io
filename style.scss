@@ -1,9 +1,8 @@
-$blue: #1b3a97;
-$bg: #f4f4f4;
-
+$blue: #FD0000;
+$bg: #ffffff;
 @import '_mq';
-
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     background-color: $bg;
@@ -14,23 +13,18 @@ body, html {
     margin: auto;
     padding: 0 10px;
     position: relative;
-
     @include mq(desktop) {
         max-width: 960px;
     }
-
     h1 {
         margin: 0;
     }
-    
     span {
         color: $blue;
     }
-
     a {
         color: $blue;
         text-decoration: none;
-        
         &:hover {
             border-bottom: 1px solid $blue;
         }
@@ -41,12 +35,13 @@ body, html {
     h1 {
         font-size: 32px;
         line-height: 1.25;
-        font-family: "Playfair Display", Arial;
+        font-family: "Roboto", Arial;
         margin-bottom: 20px;
+        font-weight: 800;
         margin-top: 20px;
     }
     p {
-        font-family: "Open Sans", "Arial";
+        font-family: "Roboto", "Arial";
         color: #333;
         font-size: 18px;
         line-height: 27px;
@@ -56,27 +51,22 @@ body, html {
 
 .main__block {
     margin-bottom: 20px;
-    border: 1px solid darken($bg, 10%);
+    border: 2px solid #000;
     box-sizing: border-box;
     background-color: #fff;
     transition: transform 0.2s ease-in-out;
-    
     @include mq(desktop) {
         margin-right: 20px;
         max-width: 460px;
         float: left;
     }
-
     h2 {
         padding-left: 10px;
         padding-right: 10px;
-
         @include mq(desktop) {
             height: 48px;
-            overflow: hidden;
         }
     }
-
     &:hover {
         transform: scale(1.02);
         a {
@@ -90,13 +80,12 @@ body, html {
         content: 'Selected work';
         font-size: 24px;
         line-height: 1.25;
-        font-family: "Playfair Display", "Arial";
+        font-family: "Roboto", "Arial";
         color: $blue;
         font-weight: bold;
         display: block;
         padding-bottom: 20px;
     }
-
     margin-top: 40px;
     img {
         // display: none;
@@ -104,14 +93,13 @@ body, html {
         // border-top: 1px solid darken($bg, 10%);
     }
     h2 {
-        font-size: 16px;
-        line-height: 24px;
-        font-family: "Open Sans", "Arial";
+        font-size: 20px;
+        line-height: 25px;
+        font-family: "Roboto", "Arial";
         color: #333;
         font-weight: 700;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        
+        margin-top: 8px;
+        margin-bottom: 15px;
         &::before {
             // content: '• ';
             font-weight: bold;
@@ -121,7 +109,6 @@ body, html {
             transition: margin-right 0.1s ease-out;
             // transform: scale(0.9);
         }
-
     }
     a {
         text-decoration: none;
