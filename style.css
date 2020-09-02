@@ -20,14 +20,14 @@ html {
   margin: 0;
 }
 .main span {
-  color: #FD0000;
+  color: #e24a4a;
 }
 .main a {
-  color: #FD0000;
+  color: #e24a4a;
   text-decoration: none;
 }
 .main a:hover {
-  border-bottom: 1px solid #FD0000;
+  border-bottom: 1px solid #e24a4a;
 }
 
 .main__left h1 {
@@ -84,7 +84,7 @@ html {
   font-size: 24px;
   line-height: 1.25;
   font-family: "Roboto", "Arial";
-  color: #FD0000;
+  color: #e24a4a;
   font-weight: bold;
   display: block;
   padding-bottom: 20px;
@@ -103,7 +103,7 @@ html {
 }
 .main__right h2::before {
   font-weight: bold;
-  color: #FD0000;
+  color: #e24a4a;
   margin-right: 5px;
   display: inline-block;
   transition: margin-right 0.1s ease-out;
