@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #EEE;
 }
 
 .main {
@@ -11,63 +11,80 @@ html {
   padding: 0 10px;
   position: relative;
 }
-@media (min-width: 61.25em) {
+@media (min-width: 58.75em) {
   .main {
-    max-width: 960px;
+    max-width: 980px;
   }
 }
-.main h1 {
-  margin: 0;
+@media (min-width: 87.5em) {
+  .main {
+    max-width: 1400px;
+  }
 }
 .main span {
-  color: #e24a4a;
+  color: #1a508b;
 }
 .main a {
-  color: #e24a4a;
+  color: #1a508b;
   text-decoration: none;
 }
 .main a:hover {
-  border-bottom: 1px solid #e24a4a;
+  border-bottom: 1px solid #1a508b;
 }
 
+.main__left {
+  max-width: 900px;
+}
 .main__left h1 {
-  font-size: 32px;
-  line-height: 1.25;
-  font-family: "Roboto", Arial;
+  font-size: 65px;
+  line-height: 1.1;
+  font-family: "Staatliches", Arial;
   margin-bottom: 20px;
-  font-weight: 800;
-  margin-top: 20px;
+  font-weight: 300;
+  padding-top: 40px;
 }
 .main__left p {
-  font-family: "Roboto", "Arial";
+  font-family: "Raleway", "Arial";
   color: #333;
   font-size: 18px;
   line-height: 27px;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
 .main__block {
   margin-bottom: 20px;
-  border: 2px solid #000;
+  border: 2px solid #1a508b;
   box-sizing: border-box;
   background-color: #fff;
   transition: transform 0.2s ease-in-out;
 }
-@media (min-width: 61.25em) {
+@media (min-width: 58.75em) {
   .main__block {
     margin-right: 20px;
-    max-width: 460px;
+    width: 440px;
     float: left;
   }
 }
 .main__block h2 {
   padding-left: 10px;
   padding-right: 10px;
+  box-sizing: border-box;
 }
-@media (min-width: 61.25em) {
+@media (min-width: 58.75em) {
   .main__block h2 {
-    height: 48px;
+    height: 62px;
   }
+}
+.main__block h2::before {
+  content: attr(data-pub);
+  display: block !important;
+  clear: both;
+  color: #777 !important;
+  font-weight: 300 !important;
+  font-size: 11px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 .main__block:hover {
   transform: scale(1.02);
@@ -83,8 +100,8 @@ html {
   content: "Selected work";
   font-size: 24px;
   line-height: 1.25;
-  font-family: "Roboto", "Arial";
-  color: #e24a4a;
+  font-family: "Raleway", "Arial";
+  color: #1a508b;
   font-weight: bold;
   display: block;
   padding-bottom: 20px;
@@ -95,15 +112,15 @@ html {
 .main__right h2 {
   font-size: 20px;
   line-height: 25px;
-  font-family: "Roboto", "Arial";
-  color: #333;
+  font-family: "Raleway", "Arial";
+  color: #1a508b;
   font-weight: 700;
   margin-top: 8px;
   margin-bottom: 15px;
 }
 .main__right h2::before {
   font-weight: bold;
-  color: #e24a4a;
+  color: #1a508b;
   margin-right: 5px;
   display: inline-block;
   transition: margin-right 0.1s ease-out;

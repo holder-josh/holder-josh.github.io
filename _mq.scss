@@ -8,7 +8,8 @@ $mq-responsive: true;
 // across team members. It will improve communication between
 // stakeholders, designers, developers, and testers.
 $mq-breakpoints: (
-    desktop: 980px
+    tablet: 940px,
+    desktop: 1400px
 );
 
 // Define the breakpoint from the $mq-breakpoints list that should
