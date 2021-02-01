@@ -36,12 +36,18 @@ html {
   max-width: 900px;
 }
 .main__left h1 {
-  font-size: 65px;
+  font-size: 39px;
   line-height: 1.1;
-  font-family: "Staatliches", Arial;
+  font-family: "Raleway", "Arial";
   margin-bottom: 20px;
-  font-weight: 300;
+  font-weight: 800;
   padding-top: 40px;
+  text-transform: uppercase;
+}
+@media (min-width: 58.75em) {
+  .main__left h1 {
+    font-size: 54px;
+  }
 }
 .main__left p {
   font-family: "Raleway", "Arial";
